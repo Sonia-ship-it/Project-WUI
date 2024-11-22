@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="wui.php" method="POST">
+    <fieldset>
+    <legend>Personal information</legend><br>
+    First name<input type="text" name="fname" autofocus><br>
+    Last name<input type="text" name="lname"><br>
+    Your email<input type="email" name="mail" required><br>
+    Gender<input type="radio" name="gend" value="male">Male
+    <input type="radio" name="gend" value="female">Female<br>
+    Age <input type="number" name="age" id="age" min="12" max="17"><br>
+               <label for="class">Choose your school</label>
+    <select name="skuls">
+        <option value="Rwanda Coding Academy">Rwanda Coding Academy</option>
+        <option value="Gashora girls Academy">Gashora girls Academy</option>
+        <option value="Ecole de science Byimana">Ecole de science Byimana</option>
+        <option value="College du christ roi">College du christ roi</option>
+        <option value="Lycee Notre Dame de Citeaux">Lycee Notre Dame de Citeaux</option>
+    </select><br>
+    Location <br>
+    <input type="radio" name="location" value="Kigali city" id="kigali">Kigali city<br>
+    <input type="radio" id="northern" name="location" value="Northern province">Northern province <br>
+    <input type="radio" id="southern" name="location"  value="Southern province">Southern province <br>
+    <input type="radio" id="western" name="location" value="Western province">Western province <br>
+    <input type="radio" id="eastern" name="location" value="Eastern province">Eastern province <br>
+    Who did you hear from this program?<br>
+    <input type="checkbox" name="hear[]" value="Students">Students</input>
+    <input type="checkbox" name="hear[]"  value="Teachers">Teachers</input>
+    <input type="checkbox" name="hear[]" value="Television">Television</input>
+    <input type="checkbox" name="hear[]"  value="Social Media">Social Media</input><br>
+    <!-- <input type="radio" value="favc">
+    Favourite courses<input type="radio" value="favc">
+    <label for="wui">WUI</label>
+    <input type="radio" value="favc">
+    <label for="wui">Java script</label>
+    <input type="radio" value="favc">
+    <label for="wui">Embedded systems</label> -->
+</fieldset>
+<fieldset>
+<legend>Evaluation of applicant</legend>
+<label for="hobbylike">1. Tell us more about your hobby</label><br>
+<br><textarea name="hobby" id="hobby" rows="15" cols="150"></textarea><br>
+<label for="extracurricular">2. Describe about extracurricular activities you engaged in</label><br>
+<br><textarea name="actv" id="actv" rows="15" cols="150"></textarea>
+</fieldset><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
